@@ -124,6 +124,12 @@ case $MACHINE in
   export APRUN="time"
   ;;
 
+"ORION")
+  ulimit -s unlimited
+  ulimit -a
+  export APRUN="time"
+  ;;
+
 
 "JET")
   ulimit -s unlimited
@@ -318,7 +324,7 @@ ${tmp_dir}" \
   ;;
 
 
-"CHEYENNE" | "HERA" | "JET" | "ODIN")
+"CHEYENNE" | "HERA" | "ORION" | "JET" | "ODIN")
   $APRUN "${exec_fp}" < "${input_redirect_fn}" || \
     print_err_msg_exit "\
 Call to executable (exec_fp) that generates the raw orography file returned 

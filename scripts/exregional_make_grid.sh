@@ -128,6 +128,14 @@ case $MACHINE in
   ;;
 #
 
+"ORION")
+#
+  APRUN="time"
+#
+  ulimit -s unlimited
+  ulimit -a
+  ;;
+#
 "JET")
 #
   APRUN="time"

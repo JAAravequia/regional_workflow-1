@@ -1,9 +1,9 @@
-MACHINE="hera"
-ACCOUNT="an_account"
+MACHINE="orion"
+ACCOUNT="fv3-cam"
 EXPT_SUBDIR="test_community"
 
 QUEUE_DEFAULT="batch"
-QUEUE_HPSS="service"
+QUEUE_HPSS="orion"
 QUEUE_FCST="batch"
 
 VERBOSE="TRUE"

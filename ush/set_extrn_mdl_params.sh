@@ -61,6 +61,9 @@ else
     "HERA")
       EXTRN_MDL_FILES_SYSBASEDIR_ICS=""
       ;;
+    "ORION")
+      EXTRN_MDL_FILES_SYSBASEDIR_ICS=""
+      ;;
     "JET")
       EXTRN_MDL_FILES_SYSBASEDIR_ICS=""
       ;;
@@ -89,6 +92,9 @@ this machine and external model combination:
       ;;
     "HERA")
       EXTRN_MDL_FILES_SYSBASEDIR_ICS="/scratch1/NCEPDEV/rstprod/com/gfs/prod"
+      ;;
+    "ORION")
+      EXTRN_MDL_FILES_SYSBASEDIR_ICS="/work/noaa/stmp/erogers"
       ;;
     "JET")
       EXTRN_MDL_FILES_SYSBASEDIR_ICS="/public/data/grids/gfs/nemsio"
@@ -210,6 +216,9 @@ else
     "HERA")
       EXTRN_MDL_FILES_SYSBASEDIR_LBCS=""
       ;;
+    "ORION")
+      EXTRN_MDL_FILES_SYSBASEDIR_LBCS="/work/noaa/stmp/erogers"
+      ;;
     "JET")
       EXTRN_MDL_FILES_SYSBASEDIR_LBCS=""
       ;;
@@ -239,6 +248,9 @@ this machine and external model combination:
       ;;
     "HERA")
       EXTRN_MDL_FILES_SYSBASEDIR_LBCS="/scratch1/NCEPDEV/rstprod/com/gfs/prod"
+      ;;
+    "ORION")
+      EXTRN_MDL_FILES_SYSBASEDIR_LBCS="/work/noaa/stmp/erogers"
       ;;
     "JET")
       EXTRN_MDL_FILES_SYSBASEDIR_LBCS="/public/data/grids/gfs/nemsio"

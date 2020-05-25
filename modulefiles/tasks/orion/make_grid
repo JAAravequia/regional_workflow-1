@@ -1,0 +1,16 @@
+#%Module#####################################################
+## Module file for make_grid task.
+#############################################################
+
+module purge
+
+module load intel/2018.4 
+module load netcdf/4.7.2
+module load hdf5/1.10.5
+
+module load contrib
+# module load miniconda3
+# if [module-info mode load] {
+#   system "conda activate regional_workflow"
+# }
+#system "conda init bash; conda activate regional_workflow" 

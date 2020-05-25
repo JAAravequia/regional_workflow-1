@@ -1,0 +1,5 @@
+module load wgrib/2.0.8 
+
+module load contrib
+# module load miniconda3
+conda activate regional_workflow

@@ -123,6 +123,12 @@ case "$MACHINE" in
   APRUN="srun"
   ;;
 #
+"ORION")
+  ulimit -s unlimited
+#  ulimit -a
+  APRUN="srun"
+  ;;
+#
 "JET")
   ulimit -s unlimited
 #  ulimit -a

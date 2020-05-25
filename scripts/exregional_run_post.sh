@@ -118,6 +118,12 @@ case $MACHINE in
   ;;
 
 
+"ORION")
+#  export NDATE=/scratch3/NCEPDEV/nwprod/lib/prod_util/v1.1.0/exec/ndate
+  APRUN="srun"
+  ;;
+
+
 "JET")
   APRUN="srun"
   ;;

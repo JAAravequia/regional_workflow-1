@@ -13,6 +13,11 @@ the shell scripts
 <!ENTITY QUEUE_HPSS    "<{{ queue_hpss_tag }}>{{ queue_hpss }}</{{ queue_hpss_tag }}>">
 <!ENTITY QUEUE_FCST    "<{{ queue_fcst_tag }}>{{ queue_fcst }}</{{ queue_fcst_tag }}>">
 
+<!ENTITY PE_EXTRA        "<native>-p orion</native>">
+<!ENTITY SERIAL_EXTRA    "<native>-p orion</native>">
+<!ENTITY SHARED_EXTRA    "<native>-p orion</native>">
+<!ENTITY SERVICE_EXTRA   "<native>-p orion</native>">
+
 <!ENTITY RUN_TASK_MAKE_GRID      "{{ run_task_make_grid | upper }}">
 <!ENTITY RUN_TASK_MAKE_OROG      "{{ run_task_make_orog | upper }}">
 <!ENTITY RUN_TASK_MAKE_SFC_CLIMO "{{ run_task_make_sfc_climo | upper }}">
@@ -247,6 +252,7 @@ MODULES_RUN_TASK_FP script.
 
     &RSRC_GET_EXTRN_MDL_FILES;
     &RSRV_HPSS;
+    &PE_EXTRA;
 
     <command>&LOAD_MODULES_RUN_TASK_FP; "&GET_EXTRN_LBCS_TN;" "&JOBSDIR;/JREGIONAL_GET_EXTRN_FILES"</command>
     <nodes>&PROC_GET_EXTRN_MDL_FILES;</nodes>
@@ -313,6 +319,7 @@ MODULES_RUN_TASK_FP script.
 
     &RSRC_MAKE_LBC1_TO_LBCN;
     &RSRV_DEFAULT;
+    &PE_EXTRA;
 
     <command>&LOAD_MODULES_RUN_TASK_FP; "&MAKE_LBCS_TN;" "&JOBSDIR;/JREGIONAL_MAKE_LBCS"</command>
     <nodes>&PROC_MAKE_LBC1_TO_LBCN;</nodes>
@@ -356,6 +363,7 @@ MODULES_RUN_TASK_FP script.
 
     &RSRC_RUN_FCST;
     &RSRV_RUN_FCST;
+    &PE_EXTRA;
 
     <command>&LOAD_MODULES_RUN_TASK_FP; "&RUN_FCST_TN;" "&JOBSDIR;/JREGIONAL_RUN_FCST"</command>
     <nodes>&PROC_RUN_FCST;</nodes>
@@ -388,6 +396,7 @@ MODULES_RUN_TASK_FP script.
     
       &RSRC_POST;
       &RSRV_DEFAULT;
+      &PE_EXTRA;
 
       <command>&LOAD_MODULES_RUN_TASK_FP; "&RUN_POST_TN;" "&JOBSDIR;/JREGIONAL_RUN_POST"</command>
       <nodes>&PROC_POST;</nodes>

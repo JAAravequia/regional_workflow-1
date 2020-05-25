@@ -1,0 +1,10 @@
+#%Module#####################################################
+## Module file for make_orog task.
+#############################################################
+
+module purge
+
+module load intel/2018.4 
+module load netcdf/4.7.2
+module load hdf5/1.10.5
+

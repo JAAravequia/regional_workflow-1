@@ -311,6 +311,15 @@ Then remove this message and rerun."
   QUEUE_FCST=${QUEUE_FCST:-""}
   ;;
 #
+"ORION")
+#
+  NCORES_PER_NODE=20
+  SCHED="slurm"
+  QUEUE_DEFAULT=${QUEUE_DEFAULT:-"batch"}
+  QUEUE_HPSS=${QUEUE_HPSS:-"orion"}
+  QUEUE_FCST=${QUEUE_FCST:-"orion"}
+  ;;
+#
 "JET")
 #
   NCORES_PER_NODE=24
@@ -679,6 +688,12 @@ case $MACHINE in
 "HERA")
   FIXgsm="/scratch1/NCEPDEV/global/glopara/fix/fix_am"
   SFC_CLIMO_INPUT_DIR="/scratch1/NCEPDEV/da/George.Gayno/ufs_utils.git/climo_fields_netcdf"
+  ;;
+
+"ORION")
+  FIXgsm="/work/noaa/fv3-cam/jaravequ/regional_workflow/fix/fix_am"
+#  FIXgsm="/work/noaa/fv3-cam/emc.campara/fix_fv3cam/fix_am"
+  SFC_CLIMO_INPUT_DIR="/work/noaa/fv3-cam/jaravequ/UFS_UTILS-GGayno/fix/fix_sfc_climo"
   ;;
 
 "JET")

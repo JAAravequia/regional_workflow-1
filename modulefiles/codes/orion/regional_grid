@@ -1,0 +1,10 @@
+#%Module#####################################################
+## Module file for regional_grid
+#############################################################
+module purge
+module use -a /apps/contrib/NCEPLIBS/orion/modulefiles
+module load intel/2018.4
+module load netcdf/4.5.0 
+module load hdf5/1.10.5
+module load szip/2.1.1
+setenv HDF5 "/apps/intel-2018/hdf5-1.10.5"

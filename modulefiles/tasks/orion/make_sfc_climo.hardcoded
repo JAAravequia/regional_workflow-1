@@ -1,0 +1,12 @@
+#%Module#####################################################
+## Module file for make_sfc_climo task.
+#############################################################
+
+module purge
+
+module load intel/2018.4 
+module load impi/2018.4
+
+module use -a /apps/contrib/NCEPLIBS/lib/modulefiles
+module load esmf/8.0.0_ParallelNetCDF4.7.4
+
